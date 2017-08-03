@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="blocChat">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bloc Chat</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div id="container">
+      <div id="sidebar">
+        <div id="sidebar-content">
+          <div id="sidebar-header">
+            <h1>Bloc Chat</h1>
+            <a href="#" class="newRoom">New Room</a>
+          </div>
+          <h2>Room 1</h2>
+          <h2>Room 2</h2>
+          <h2>Room 3</h2>
+        </div>
+      </div>
+      <div id="content">
+
+      </div>
+    </div>
+    <ui-view></ui-view>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <!-- AngularUI Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBA111ZWko6-NwE2i4uNj9kMidVRoE2mHE",
+        authDomain: "bloc-chat-ae2b9.firebaseapp.com",
+        databaseURL: "https://bloc-chat-ae2b9.firebaseio.com",
+        projectId: "bloc-chat-ae2b9",
+        storageBucket: "",
+        messagingSenderId: "545829838980"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- All other Javascript -->
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
