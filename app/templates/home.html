@@ -1,0 +1,21 @@
+
+<div class="wrap">
+    <div class="nav-bar">
+
+        <div class="nav-header">
+          <div class="hero-title">Bloc Chat</div>
+          <button class="new-room-button" type="button">New room</button>
+        </div>
+
+        <ul class="rooms-list">
+            <li class="room-name" ng-repeat="rooms in main.chatRoomArray">
+              {{rooms.$value}}
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="room-view" >
+
+    </div>
+</div>
