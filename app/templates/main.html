@@ -4,11 +4,11 @@
 
         <div class="nav-header">
           <div class="hero-title">Bloc Chat</div>
-          <button class="new-room-button" type="button">New room</button>
+          <button class="new-room-button" type="button" ng-click="main.openNewRoomModal()">New room</button>
         </div>
 
         <ul class="rooms-list">
-            <li class="room-name" ng-repeat="room in home.chatRoomArray">
+            <li class="room-name" ng-repeat="room in main.chatRoomArray">
               {{room.$value}}
             </li>
         </ul>
