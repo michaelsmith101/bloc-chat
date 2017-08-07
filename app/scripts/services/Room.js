@@ -11,7 +11,7 @@
         rooms.$add(roomName).then(function(ref) {
           var id = ref.key;
           console.log("added "+ roomName + " with id " + id);
-          rooms.$indexFor(id);
+          // rooms.$indexFor(id);
         });
     };
 
