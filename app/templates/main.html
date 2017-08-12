@@ -23,6 +23,9 @@
              <span class="message-content">{{message.content}}</span><span class="message-time">{{message.sentAt}}</span>
          </li>
       </ul>
-
+      <form class="message-form" ng-submit="main.sendMessage()">
+        <input type="text" class="message-input" placeholder="Write your message here..." ng-model="main.message">
+        <input type="submit" class="button-sendmessage" value="Send">
+      </form>
     </div>
 </div>
