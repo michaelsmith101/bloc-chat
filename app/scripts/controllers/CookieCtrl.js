@@ -4,7 +4,7 @@
      if (!currentUser || currentUser === '') {
        $uibModal.open({
         //________Modal configuration object properties
-        templateUrl: '/templates/new_user_modal.html',
+        templateUrl: 'templates/new_user_modal.html',
         controller: 'UserModalCtrl',
         controllerAs: 'usermodal'
       })
